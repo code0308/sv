@@ -5,6 +5,7 @@ import { loginSchema } from '../../shared/libs/zod/login.schema';
 import { registerSchema } from '../../shared/libs/zod/register.schema';
 import { forgotPasswordSchema } from '../../shared/libs/zod/forgot-pw.schema';
 import { resetPasswordSchema } from '../../shared/libs/zod/reset-pw.schema';
+import { loginRateLimiter, forgotPasswordRateLimiter, resetPasswordRateLimiter } from '../../shared/middlewares/rateLimiters';
 
 const authRoutes = Router();
 
